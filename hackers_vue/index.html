@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>날씨 웹앱</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
+    <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=5f2a4e781f5c3483a2e82eae2e15fb28"></script>
+</head>
+<body>
+
+<div id="app">
+    <h2>🌤️ 현재 날씨</h2>
+    <p class="weather">{{ city }}: {{ temperature }}°C ({{ weather }})</p>
+    <p>습도: {{ humidity }}% | 바람: {{ windSpeed }} m/s</p>
+    <div id="map"></div>
+</div>
+
+<script src="app.js"></script>
+<script src="map.js"></script>
+
+</body>
+</html>
